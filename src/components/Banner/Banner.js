@@ -7,7 +7,6 @@ const Banner = () => {
   return (
     <ScrollView horizontal showsHorizontalScrollIndicator={false}>
       {bannerData.map(bannerNews => (
-        // console.log(bannerNews)
         <Image style={styles.bannerImage} source={{uri: bannerNews.imageUrl}} />
       ))}
     </ScrollView>

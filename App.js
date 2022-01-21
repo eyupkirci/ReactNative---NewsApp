@@ -19,22 +19,10 @@ const App = () => {
       <View>
         <Text style={styles.headerText}>News</Text>
 
-        {/* {FlatList}
-        <FlatList
-        data={newsData}
-        renderItem={({item}) =>(
-        <>
-        <Text>{item.title}</Text>
-        <Text>{item.description}</Text>
-        </>)}
-        /> */}
-
         <FlatList
           ListHeaderComponent={() => (<Banner/>)}
-          // keyExtractor={(item,index) => item.<keyparameter>.toString()}
           data={newsData}
           renderItem={renderNewsCard}
-          // renderItem={({item}) => <NewsCard news={item} />}
         />
       </View>
     </SafeAreaView>
